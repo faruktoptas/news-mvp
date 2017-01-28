@@ -15,7 +15,7 @@ public class MainPresenter extends BasePresenter<MainContract.View> implements M
     @Override
     public void loadHelloText() {
         Random random = new Random();
-        mView.onTextLoaded(helloTexts[random.nextInt(helloTexts.length)]);
-
+        String hello = helloTexts[random.nextInt(helloTexts.length)];
+        mView.onTextLoaded(hello);
     }
 }
