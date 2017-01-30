@@ -1,4 +1,4 @@
-package me.topas.rssreader;
+package me.toptas.rssreader;
 
 import org.junit.Test;
 

@@ -1,11 +1,11 @@
-package me.topas.rssreader;
+package me.toptas.rssreader;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 
-import me.topas.rssreader.base.BaseActivity;
+import me.toptas.rssreader.base.BaseActivity;
 
 public class MainActivity extends BaseActivity implements MainContract.View, View.OnClickListener {
 

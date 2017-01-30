@@ -1,4 +1,4 @@
-package me.topas.rssreader;
+package me.toptas.rssreader;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("me.topas.rssreader", appContext.getPackageName());
+        assertEquals("me.toptas.rssreader", appContext.getPackageName());
     }
 }

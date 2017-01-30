@@ -1,6 +1,6 @@
-package me.topas.rssreader;
+package me.toptas.rssreader;
 
-import me.topas.rssreader.base.BaseView;
+import me.toptas.rssreader.base.BaseView;
 
 /**
  * Created by ftoptas on 28/01/17.

@@ -1,4 +1,4 @@
-package me.topas.rssreader.base;
+package me.toptas.rssreader.base;
 
 public  class BasePresenter<V extends BaseView> {
 

@@ -1,4 +1,4 @@
-package me.topas.rssreader.base;
+package me.toptas.rssreader.base;
 
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;

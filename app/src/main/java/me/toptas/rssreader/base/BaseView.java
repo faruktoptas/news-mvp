@@ -1,4 +1,4 @@
-package me.topas.rssreader.base;
+package me.toptas.rssreader.base;
 
 /**
  * Created by ftoptas on 28/01/17.
