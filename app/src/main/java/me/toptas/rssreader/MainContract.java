@@ -1,5 +1,6 @@
 package me.toptas.rssreader;
 
+import me.toptas.rssreader.base.BaseMvpPresenter;
 import me.toptas.rssreader.base.BaseView;
 
 /**
@@ -9,7 +10,7 @@ import me.toptas.rssreader.base.BaseView;
 public interface MainContract {
 
     // User actions. Presenter will implement
-    interface Presenter {
+    interface Presenter extends BaseMvpPresenter<MainContract.View>{
         void loadHelloText();
     }
 

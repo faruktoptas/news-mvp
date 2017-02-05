@@ -16,6 +16,6 @@ public class MainPresenter extends BasePresenter<MainContract.View> implements M
     public void loadHelloText() {
         Random random = new Random();
         String hello = helloTexts[random.nextInt(helloTexts.length)];
-        mView.onTextLoaded(hello);
+        getView().onTextLoaded(hello);
     }
 }

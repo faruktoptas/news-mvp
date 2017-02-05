@@ -12,7 +12,7 @@ public class MainActivity extends BaseActivity implements MainContract.View, Vie
 
     private TextView mTextView;
 
-    private MainPresenter mPresenter;
+    private MainContract.Presenter mPresenter;
 
     @Override
     protected int getContentResource() {
