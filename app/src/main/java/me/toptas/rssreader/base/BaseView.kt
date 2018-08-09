@@ -1,4 +1,4 @@
-package me.toptas.rssreader.base;
+package me.toptas.rssreader.base
 
 /**
  * Created by ftoptas on 28/01/17.
@@ -7,5 +7,4 @@ package me.toptas.rssreader.base;
 /**
  * Each view should extend from this interface
  */
-public interface BaseView {
-}
+interface BaseView
