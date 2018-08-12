@@ -14,6 +14,6 @@ class ActivityModule(private val activity: FragmentActivity) {
 
     @Provides
     @ActivityScope
-    fun provideMainPresenter(): MainContract.Presenter = MainPresenter()
+    fun provideMainPresenter(service: RssService): MainContract.Presenter = MainPresenter(service)
 
 }

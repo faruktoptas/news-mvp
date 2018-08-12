@@ -8,6 +8,9 @@ buildscript {
     ext.espresso_version = '2.2.2'
     ext.leakcanary_version = '1.5.1'
     ext.findbugs_version = '3.0.2'
+    ext.retrofit_version = '2.4.0'
+    ext.logger_version = '3.10.0'
+    ext.parser_version = '0.0.2'
 
     repositories {
         maven { url 'https://maven.google.com' }
@@ -28,6 +31,7 @@ allprojects {
         maven { url 'https://maven.google.com' }
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 }
 

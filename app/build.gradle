@@ -35,6 +35,10 @@ dependencies {
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
     implementation "com.google.code.findbugs:jsr305:$findbugs_version"
 
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.github.faruktoptas:RetrofitRssConverterFactory:$parser_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$logger_version"
+
     debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakcanary_version"
 
     testImplementation "junit:junit:$junit_version"

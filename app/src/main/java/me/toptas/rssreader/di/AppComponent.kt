@@ -2,6 +2,8 @@ package me.toptas.rssreader.di
 
 import android.app.Application
 import dagger.Component
+import okhttp3.OkHttpClient
+import retrofit2.Retrofit
 import javax.inject.Singleton
 
 /**
@@ -9,12 +11,17 @@ import javax.inject.Singleton
  */
 @Singleton
 @Component(modules = [
-    AppModule::class
-
+    AppModule::class,
+    NetworkModule::class
 ])
 interface AppComponent {
 
     fun app(): Application
 
+    fun okHttpClient(): OkHttpClient
+
+    fun retrofit(): Retrofit
+
+    fun service(): RssService
 
 }
