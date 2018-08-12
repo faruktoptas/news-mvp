@@ -10,7 +10,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "me.toptas.rssreader"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -26,16 +26,21 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:27.1.0'
-
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
-    testImplementation 'junit:junit:4.12'
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:customtabs:$support_version"
 
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    implementation "com.google.code.findbugs:jsr305:$findbugs_version"
+
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakcanary_version"
+
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation("com.android.support.test.espresso:espresso-core:$espresso_version", {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
 
 
 }

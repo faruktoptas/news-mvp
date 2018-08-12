@@ -1,4 +1,4 @@
-package me.toptas.rssreader
+package me.toptas.rssreader.features.main
 
 import me.toptas.rssreader.base.BaseMvpPresenter
 import me.toptas.rssreader.base.BaseView
@@ -10,7 +10,7 @@ import me.toptas.rssreader.base.BaseView
 interface MainContract {
 
     // User actions. Presenter will implement
-    interface Presenter : BaseMvpPresenter<MainContract.View> {
+    interface Presenter : BaseMvpPresenter<View> {
         fun loadHelloText()
     }
 

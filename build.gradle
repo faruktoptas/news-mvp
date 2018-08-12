@@ -2,6 +2,13 @@
 
 buildscript {
     ext.kotlin_version = '1.2.51'
+    ext.support_version = '27.1.1'
+    ext.dagger_version = '2.11'
+    ext.junit_version = '4.12'
+    ext.espresso_version = '2.2.2'
+    ext.leakcanary_version = '1.5.1'
+    ext.findbugs_version = '3.0.2'
+
     repositories {
         maven { url 'https://maven.google.com' }
         google()

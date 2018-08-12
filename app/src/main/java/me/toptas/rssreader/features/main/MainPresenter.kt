@@ -1,4 +1,4 @@
-package me.toptas.rssreader
+package me.toptas.rssreader.features.main
 
 import me.toptas.rssreader.base.BasePresenter
 import java.util.*
