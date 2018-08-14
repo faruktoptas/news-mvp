@@ -1,9 +1,12 @@
 package me.toptas.rssreader.di
 
+import android.app.Application
 import dagger.Module
 import dagger.Provides
 import me.toptas.rssreader.features.main.MainContract
 import me.toptas.rssreader.features.main.MainPresenter
+import me.toptas.rssreader.features.main.MainRepository
+import me.toptas.rssreader.features.main.MainRepositoryImpl
 import me.toptas.rssreader.features.rss.*
 import me.toptas.rssreader.network.RssService
 
@@ -15,8 +18,11 @@ class ActivityModule {
 
     @Provides
     @ActivityScope
-    fun provideMainPresenter(): MainContract.Presenter = MainPresenter()
+    fun provideMainRepository(app: Application): MainRepository = MainRepositoryImpl(app)
 
+    @Provides
+    @ActivityScope
+    fun provideMainPresenter(repository: MainRepository): MainContract.Presenter = MainPresenter(repository)
 
     @Provides
     @ActivityScope

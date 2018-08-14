@@ -10,6 +10,7 @@ import me.toptas.rssreader.di.ActivityComponent
 import me.toptas.rssreader.features.chrome.ChromeTabsWrapper
 import me.toptas.rssreader.features.rss.RssFragment
 import me.toptas.rssreader.features.rss.RssFragmentAdapter
+import me.toptas.rssreader.model.Feed
 import javax.inject.Inject
 
 class MainActivity : BaseActivity(), MainContract.View, RssFragment.OnItemSelectListener {
@@ -35,14 +36,10 @@ class MainActivity : BaseActivity(), MainContract.View, RssFragment.OnItemSelect
         wrapper = ChromeTabsWrapper(this)
     }
 
-    override fun onLoadRssFragments() {
-        setUpViewPager()
-    }
-
-    private fun setUpViewPager() {
+    override fun onLoadRssFragments(feeds: List<Feed>) {
         val fragmentList = ArrayList<RssFragment>()
         val titles = ArrayList<String>()
-        for (feed in FeedParser().parseFeeds(this)) {
+        for (feed in feeds) {
             fragmentList.add(RssFragment.newInstance(feed))
             titles.add(feed.title)
         }
@@ -50,6 +47,7 @@ class MainActivity : BaseActivity(), MainContract.View, RssFragment.OnItemSelect
         val adapter = RssFragmentAdapter(supportFragmentManager, fragmentList, titles)
         viewPager.adapter = adapter
     }
+
 
     override fun onItemSelected(rssItem: RssItem) {
         wrapper.openCustomtab(rssItem.link)

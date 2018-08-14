@@ -6,11 +6,10 @@ import me.toptas.rssreader.model.Feed
 import me.toptas.rssreader.util.Utils
 import java.util.*
 
+class MainRepositoryImpl(private val context: Context) : MainRepository {
 
-class FeedParser {
-
-    fun parseFeeds(context: Context): List<Feed> {
-        val jsonString = Utils.readFromAssets(context, RSS_FILE)
+    override fun parseFeeds(): List<Feed> {
+        val jsonString = Utils.readFromAssets(context, MainRepositoryImpl.RSS_FILE)
         val gson = Gson()
         val feeds = gson.fromJson(jsonString, Array<Feed>::class.java)
         return Arrays.asList(*feeds)
@@ -19,4 +18,9 @@ class FeedParser {
     companion object {
         private const val RSS_FILE = "rss.json"
     }
+
+}
+
+interface MainRepository {
+    fun parseFeeds(): List<Feed>
 }

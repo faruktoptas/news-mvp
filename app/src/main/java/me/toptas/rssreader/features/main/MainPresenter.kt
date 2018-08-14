@@ -7,10 +7,11 @@ import javax.inject.Inject
  * Created by ftoptas on 28/01/17.
  */
 
-class MainPresenter @Inject constructor() : BasePresenter<MainContract.View>(), MainContract.Presenter {
+class MainPresenter @Inject constructor(private val repository: MainRepository) :
+        BasePresenter<MainContract.View>(), MainContract.Presenter {
 
     override fun loadRssFragments() {
-        view?.onLoadRssFragments()
+        view?.onLoadRssFragments(repository.parseFeeds())
     }
 
 }
