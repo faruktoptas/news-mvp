@@ -1,5 +1,7 @@
 package me.toptas.rssreader.base
 
+import me.toptas.rssreader.model.Error
+
 /**
  * Created by ftoptas on 28/01/17.
  */
@@ -7,4 +9,6 @@ package me.toptas.rssreader.base
 /**
  * Each view should extend from this interface
  */
-interface BaseView
+interface BaseView{
+    fun onFail(error:Error)
+}

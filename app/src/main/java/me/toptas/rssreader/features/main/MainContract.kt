@@ -11,12 +11,13 @@ interface MainContract {
 
     // User actions. Presenter will implement
     interface Presenter : BaseMvpPresenter<View> {
-        fun loadHelloText()
+        fun loadRssFragments()
+
     }
 
     // Action callbacks. Activity/Fragment will implement
     interface View : BaseView {
-        fun onTextLoaded(text: String)
+        fun onLoadRssFragments()
     }
 
 }

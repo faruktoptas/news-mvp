@@ -3,6 +3,7 @@ package me.toptas.rssreader.di
 import dagger.Module
 import dagger.Provides
 import me.toptas.rssconverter.RssConverterFactory
+import me.toptas.rssreader.network.RssService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

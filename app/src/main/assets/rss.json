@@ -1,0 +1,22 @@
+[
+  {
+    "i": 10001,
+    "n": "Mashable",
+    "l": "http://feeds.mashable.com/Mashable"
+  },
+  {
+    "i": 1002,
+    "n": "Engadget",
+    "l": "https://www.engadget.com/rss.xml"
+  },
+  {
+    "i": 1003,
+    "n": "Wired",
+    "l": "https://www.wired.com/feed/"
+  },
+  {
+    "i": 1004,
+    "n": "Thenextweb",
+    "l": "http://feeds2.feedburner.com/thenextweb"
+  }
+]

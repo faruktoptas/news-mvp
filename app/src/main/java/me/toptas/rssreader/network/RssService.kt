@@ -1,4 +1,4 @@
-package me.toptas.rssreader.di
+package me.toptas.rssreader.network
 
 import me.toptas.rssconverter.RssFeed
 import retrofit2.Call

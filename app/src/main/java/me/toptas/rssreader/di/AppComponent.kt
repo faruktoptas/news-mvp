@@ -2,6 +2,7 @@ package me.toptas.rssreader.di
 
 import android.app.Application
 import dagger.Component
+import me.toptas.rssreader.network.RssService
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import javax.inject.Singleton

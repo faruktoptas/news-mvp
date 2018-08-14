@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RssReader</string>
+    <string name="err_rss_no_item">An error occured. Please swipe down to refresh.</string>
+    <string name="err_network">Network error. Please swipe down to refresh</string>
 </resources>
