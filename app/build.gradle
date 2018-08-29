@@ -47,6 +47,9 @@ dependencies {
     debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakcanary_version"
 
     testImplementation "junit:junit:$junit_version"
+    testImplementation "com.nhaarman:mockito-kotlin:1.6.0"
+
+
     androidTestImplementation("com.android.support.test.espresso:espresso-core:$espresso_version", {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -55,4 +58,10 @@ dependencies {
 }
 repositories {
     mavenCentral()
+}
+
+tasks.withType(Test) {
+    testLogging {
+        events "started", "passed", "skipped", "failed"
+    }
 }
