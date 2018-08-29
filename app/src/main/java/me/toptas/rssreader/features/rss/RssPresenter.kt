@@ -28,9 +28,9 @@ constructor(private val repository: RssRepository,
 
     override fun getResponse(url: String, response: RssResponse) {
         response.success?.apply {
-            if (items.isNotEmpty()) {
-                cache.addContent(url, items)
-                view?.onRssItemsLoaded(items)
+            if (isNotEmpty()) {
+                cache.addContent(url, this)
+                view?.onRssItemsLoaded(this)
             }
         }
 

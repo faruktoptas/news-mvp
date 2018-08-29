@@ -12,7 +12,7 @@ class RssRepositoryImpl @Inject constructor(private val service: RssService) : R
     override fun fetchRss(url: String, listener: RssResponseListener) {
         service.getRss(url).enqueue(object : ApiCallback<RssFeed>() {
             override fun onSuccess(response: RssFeed) {
-                listener.getResponse(url, RssResponse.success(response))
+                listener.getResponse(url, RssResponse.success(response.items))
             }
 
             override fun onFail(error: Error) {
