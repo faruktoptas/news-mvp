@@ -9,7 +9,6 @@ This app is explained in a series of Articles on medium.com
 4. [Android App From Scratch Part 3 - Creating unit tests with JUnit](https://medium.com/@faruktoptas/android-app-from-scratch-part-4-creating-unit-tests-with-junit-dd2875802aa0#.g8tv8j5vx)
 5. Creating Android Instrumentations tests
 6. Continuous Integration with Travis-CI
-7. Making the app ready for Play Store
 
 # Topics
 1. Creating an Android App Architecture 
@@ -21,11 +20,14 @@ This app is explained in a series of Articles on medium.com
 
 # Used Libraries
 1. [Dagger2](https://google.github.io/dagger/)
-2. [Chrome Custom Tabs](https://developer.chrome.com/multidevice/android/customtabs)
-3. [Gson](https://github.com/google/gson)
-4. [Picasso](http://square.github.io/picasso/)
-5. [ButterKnife](jakewharton.github.io/butterknife/)
-6. [LeakCanary](https://github.com/square/leakcanary)
+2. [Retrofit](https://github.com/square/retrofit)
+3. [OkHttp Logging Interceptor](https://github.com/square/okhttp/tree/master/okhttp-logging-interceptor)
+4. [RetrofitRssConverterFactory](https://github.com/faruktoptas/RetrofitRssConverterFactory)
+5. [LeakCanary](https://github.com/square/leakcanary)
+6. [Picasso](http://square.github.io/picasso/)
+7. [Chrome Custom Tabs](https://developer.chrome.com/multidevice/android/customtabs)
+
+
 
 ![!gif](https://github.com/faruktoptas/news-mvp/blob/master/art/app.gif?raw=true)
 
