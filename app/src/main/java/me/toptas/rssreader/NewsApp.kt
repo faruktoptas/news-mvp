@@ -10,6 +10,7 @@ class NewsApp : Application() {
 
 
     companion object {
+        lateinit var instance: Application
         private var appComponent: AppComponent? = null
 
         fun component(): AppComponent {
@@ -23,6 +24,7 @@ class NewsApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        instance = this
         LeakCanary.install(this)
         setComponent(DaggerAppComponent.builder()
                 .appModule(AppModule(this))

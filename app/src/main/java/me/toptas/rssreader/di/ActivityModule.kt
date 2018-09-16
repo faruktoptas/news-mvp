@@ -18,15 +18,7 @@ class ActivityModule {
 
     @Provides
     @ActivityScope
-    fun provideMainRepository(app: Application): MainRepository = MainRepositoryImpl(app)
-
-    @Provides
-    @ActivityScope
     fun provideMainPresenter(repository: MainRepository): MainContract.Presenter = MainPresenter(repository)
-
-    @Provides
-    @ActivityScope
-    fun provideRssRepository(service: RssService): RssRepository = RssRepositoryImpl(service)
 
     @Provides
     @ActivityScope
