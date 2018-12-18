@@ -14,7 +14,7 @@ android:
     - extra-google-m2repository
     - extra-android-m2repository
     - addon-google_apis-google-19
-    - sys-img-armeabi-v7a-android-27
+    - sys-img-armeabi-v7a-google_apis-23
 
 
 before_install:
@@ -22,7 +22,7 @@ before_install:
 
 before_script:
   - echo no | android list target
-  - echo no | android create avd --force -n test -t android-27 --abi armeabi-v7a
+  - echo no | android create avd --force -n test -t "android-23" --abi armeabi-v7a --tag google_apis
 
   - emulator -avd test -no-audio -no-window &
   - android-wait-for-emulator
