@@ -21,12 +21,13 @@ android:
     - extra-google-google_play_services
     - extra-google-m2repository
     - extra-android-m2repository
-    # - addon-google_apis-google-19
+    - addon-google_apis-google-26
 
     # Specify at least one system image,
     # if you need to run emulator(s) during your tests
     - sys-img-armeabi-v7a-android-22
     - sys-img-armeabi-v7a-android-17
+    - sys-img-armeabi-v7a-google_apis-25
 
 
 
@@ -35,7 +36,7 @@ before_install:
 
 before_script:
   - echo no | android list target
-  - echo no | android create avd --force -n test -t android-27
+  - echo no | android create avd --force -n test -t android-25 --abi google_apis/armeabi-v7a
   - emulator -avd test -no-audio -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
