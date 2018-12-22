@@ -8,7 +8,7 @@ This app is explained in a series of Articles on medium.com
 3. [Android App From Scratch Part 3 - Implementing App Logic](https://medium.com/@faruktoptas/android-app-from-scratch-part-3-implementing-app-logic-2b62ae65dcc4#.64g0334u4)
 4. [Android App From Scratch Part 4 - Creating unit tests with JUnit](https://medium.com/@faruktoptas/android-app-from-scratch-part-4-creating-unit-tests-with-junit-dd2875802aa0#.g8tv8j5vx)
 5. [Android App From Scratch Part 5 - Creating Android Instrumentations tests with Espresso](https://medium.com/android-bits/android-app-from-scratch-part-5-instrumentation-tests-17a886fe9c04)
-6. Continuous Integration with Travis-CI
+6. [Android App From Scratch Part 6 - Continuous Integration with Travis-CI](https://medium.com/android-bits/android-app-from-scratch-part-5-continuous-integration-with-travis-ci-1a6d30d22822)
 
 # Topics
 1. Creating an Android App Architecture 
